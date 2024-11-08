@@ -63,8 +63,7 @@ export default function BerthsPage() {
     }
   };
 
-  // Helper function to get the boat name based on the boatId
-  const getBoatName = (boatId: number | null) => {
+  const getBoatName = (boatId: number | null | undefined) => {
     const boat = boats.find((boat) => boat.id === boatId);
     return boat ? boat.name : "Empty";
   };
